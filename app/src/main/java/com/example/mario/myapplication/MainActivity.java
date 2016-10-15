@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         boton6.setEnabled(true);
         boton7.setEnabled(true);
         boton8.setEnabled(true);
+        ((Button)s).setEnabled(false);
 
     }
 
@@ -124,7 +125,8 @@ public class MainActivity extends AppCompatActivity {
     }else {
         Toast.makeText(getApplicationContext(), "Has Perdido", Toast.LENGTH_SHORT).show();
     }
-
+        Button start = (Button) findViewById(R.id.Start);
+        start.setEnabled(true);
         respuesta.clear();
         almacen.clear();
 
