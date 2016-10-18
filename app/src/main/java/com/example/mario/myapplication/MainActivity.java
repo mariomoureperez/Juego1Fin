@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
     void eventoComprobar(View j){
         String x=almacen.toString();
         String y=respuesta.toString();
-    if(x.equals(y)){
+    if(x.equals(y) && almacen.toString()!="[]"){
         Toast.makeText(getApplicationContext(),"Has Ganado", Toast.LENGTH_SHORT).show();
 
     }else {
